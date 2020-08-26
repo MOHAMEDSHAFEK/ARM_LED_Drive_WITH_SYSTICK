@@ -34,7 +34,7 @@ void LED_voidPingPong(LED_animation  copy_structarry[],u8 copy_u8NumberOfLed)
 			{
 				MGPIO_ViodSetPinValue(copy_structarry[i].port,copy_structarry[i].pin,LOW);
 			}
-			_delay_ms(1000);
+			_delay_ms(100);
 			i=0;
 			for (i=copy_u8NumberOfLed-1 ; i>=0; i--)
 			{
@@ -46,7 +46,7 @@ void LED_voidPingPong(LED_animation  copy_structarry[],u8 copy_u8NumberOfLed)
 			{
 				MGPIO_ViodSetPinValue(copy_structarry[i].port,copy_structarry[i].pin,LOW);
 			}
-			_delay_ms(1000);
+			_delay_ms(100);
 	}
 }
 
@@ -78,7 +78,7 @@ void LED_voidOpenFlowerClosFlower(LED_animation  copy_structarry[],u8 copy_u8Num
 			{
 				MGPIO_ViodSetPinValue(copy_structarry[i].port,copy_structarry[i].pin,LOW);
 			}
-			_delay_ms(500);
+			_delay_ms(100);
 	}
 }
 

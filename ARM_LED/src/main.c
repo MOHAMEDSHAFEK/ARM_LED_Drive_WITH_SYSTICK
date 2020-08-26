@@ -32,10 +32,6 @@ int main(void)
 
 	 while(1)
 	{
-		 MGPIO_ViodSetPinValue(GPIOA,PIN1,HIGH);
-		 _delay_ms(1000);
-		 MGPIO_ViodSetPinValue(GPIOA,PIN1,LOW);
-		 		 _delay_ms(1000);
 		LED_voidPingPong(MY_LED,8);
 		LED_voidOpenFlowerClosFlower(MY_LED,8);
 		LED_voidLEDFladher(MY_LED,8);
