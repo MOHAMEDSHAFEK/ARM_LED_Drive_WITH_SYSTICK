@@ -48,7 +48,7 @@
 #define PLL_PS_14	12
 #define PLL_PS_15	13
 #define PLL_PS_16	14
-#define PLL_PS_16	15
+#define PLL_PS_17	15
 
 /* PLL HSE half value option */
 #define PLL_HSE_NO_DIV		0

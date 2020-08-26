@@ -21,7 +21,7 @@ void MSYSTICK_voidEnabled(void)
 		CLR_BIT(STK_CTRL,CLKSOURCE);
 	#elif CLOCK_SOURCE == PROCESSOR_CLOCK_AHB
 		SET_BIT(STK_CTRL,CLKSOURCE);
-	#else #error "wrong clock source of systick timer selction"
+	#else
 	#endif
 		
 		SET_BIT(STK_CTRL,ENABLE);   //Enables the counter for systic timer 

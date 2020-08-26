@@ -5,20 +5,20 @@
  *      Author: shafek
  */
 
-#include "LED_enamtion.h"
+#include "LED_animation.h"
 #include "BIT_MATH.h"
 #include "SYSTICK_interface.h"
 
-void LED_voidLEDEnable(LED_enamtion  copy_structarry[],u8 copy_u8NumberOfLed)
+void LED_voidLEDEnable(LED_animation  copy_structarry[],u8 copy_u8NumberOfLed)
 {
-	u8 i=0;
+	s8 i=0;
 	for (i=0 ; i<copy_u8NumberOfLed; i++)
 	{
 		MGPIO_VoidSetPinDirection(copy_structarry[i].port,copy_structarry[i].pin,OUTPUT_SPEED_2MHZ_PP);
 	}
 }
 
-void LED_voidPingPong(LED_enamtion  copy_structarry[],u8 copy_u8NumberOfLed)
+void LED_voidPingPong(LED_animation  copy_structarry[],u8 copy_u8NumberOfLed)
 {
 	s8 i=0;
 	s8 j=0;
@@ -51,7 +51,7 @@ void LED_voidPingPong(LED_enamtion  copy_structarry[],u8 copy_u8NumberOfLed)
 }
 
 
-void LED_voidOpenFlowerClosFlower(LED_enamtion  copy_structarry[],u8 copy_u8NumberOfLed)
+void LED_voidOpenFlowerClosFlower(LED_animation  copy_structarry[],u8 copy_u8NumberOfLed)
 {
 	s8 i=0;
 	s8 j=0;
@@ -83,7 +83,7 @@ void LED_voidOpenFlowerClosFlower(LED_enamtion  copy_structarry[],u8 copy_u8Numb
 }
 
 
-void LED_voidLEDFladher(LED_enamtion  copy_structarry[],u8 copy_u8NumberOfLed)
+void LED_voidLEDFladher(LED_animation  copy_structarry[],u8 copy_u8NumberOfLed)
 {
 	s8 i=0;
 	s8 j=0;
